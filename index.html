@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Dog Quiz</title>
+    <meta name='description' content='Quiz about dogs.'>
+    <link href='index.css' rel='stylesheet' type='text/css'/>
+  </head>
+  
+<body>
+  <main role='main'>
+    <section id='start-page' class='main-box'>
+      <div id='title'>
+      <h1>A Short Fun Quiz About Dogs</h1>
+      <img class='puppyPic' src='https://www.chicagoparent.com/downloads/21168/download/adorable-puppy.jpg?cb=ceb03b5cdefa3c132db18811980d0ee2&w=640' alt='puppy running through grass'>
+      <h3 class='start-text'>How Much Do You Know About Dogs?<br>Click the button below to find out!</h3>
+      </div>
+      <button class='button'>Start Quiz</button>
+    </section>
+    
+    <section id='question-page' class='hidden main-box'>
+      <form  id='puppy-form' method='get'>
+      <fieldset name='question-set'>
+        <div id='quiz-question' class='puppy-question'></div>
+        <div class='puppy-answers' role='radiogroup'></div>
+        <button id='submit-answer' class='button hidden disabled' type='submit' disabled>Submit</button>
+      </fieldset>
+      </form>
+      <button id='next-question' class='button hidden' type='submit'>Next</button>
+      <div id='feedbackcorrect' class='all-feedback hidden'>
+      <h3>Correct, good job!</h3><br>
+      <img class='correct-dog' src='https://www.telegraph.co.uk/content/dam/Pets/spark/royal-canin/happy-puppy.jpg?imwidth=450' alt='happy brown dog picture'></div>
+      <div id='wrong-answer' class='hidden'><br></div>
+      <img class='wrong-answer-picture hidden' src='https://www.eastbaytimes.com/wp-content/uploads/2019/03/GettyImages-915338892-7.jpg?w=620' alt='picture of dog looking at camera'>
+      <div class='results-counter'></div>
+      </section>
+    
+    <section id='final-page' class='hidden main-box'>
+      <h1>Results</h1>
+      <div id='final-correct'><br></div>
+      <div>
+      <img class='german-shepard-pic' src='https://t1.uc.ltmcdn.com/en/images/4/8/9/img_9984_apa_12074_orig.jpg' alt='german shepard looking up'/><br>
+      <p class='retake-quiz'>Click Below to Retake Quiz</p></div>
+      <button id='retake' type='submit'>Try</button>
+    </section>
+    
+  </main>  
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src='index.js'></script>
+  </body>
+</html>
